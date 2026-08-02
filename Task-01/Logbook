@@ -11,3 +11,8 @@ and reveal the hidden transmission in the bounty hunter feed.
 The Wax Labyrinth was too dense for a standard search. I used grep -ira "fragment" . to search every file as text. 
 Found the hidden 'Poneglyph Fragment'
 inside a  nested log file: sector_beta/outpost/watchtower/storage/archive/agent_manifest.log."
+Level 3 Flag: BAROQUE_DIAL{SPLIT_TIMELINE_MISDIRECTION}
+Poneglyph Fragment I: KjY2Mjf4bW0lKzYqNyBsIS0vbTAtJTcnL
+Method: Used git checkout to enter the little_garden branch. 
+Found the Wax_Jungle directory and used grep to find the genuine manifest. 
+Decoded the Base64 security tag to reveal the flag.
