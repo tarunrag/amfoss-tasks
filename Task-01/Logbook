@@ -8,3 +8,6 @@ lag Found: BAROQUE_DIAL{SPLIT_TIMELINE_MISDIRECTION}
 Method:Encountered a log file with 100+ repetitive entries. 
 Used the grep -v "VALID" command to filter it out
 and reveal the hidden transmission in the bounty hunter feed.
+The Wax Labyrinth was too dense for a standard search. I used grep -ira "fragment" . to search every file as text. 
+Found the hidden 'Poneglyph Fragment'
+inside a  nested log file: sector_beta/outpost/watchtower/storage/archive/agent_manifest.log."
