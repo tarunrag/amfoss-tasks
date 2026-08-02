@@ -16,3 +16,5 @@ Poneglyph Fragment I: KjY2Mjf4bW0lKzYqNyBsIS0vbTAtJTcnL
 Method: Used git checkout to enter the little_garden branch. 
 Found the Wax_Jungle directory and used grep to find the genuine manifest. 
 Decoded the Base64 security tag to reveal the flag.
+Fragment I: KjY2Mjf4bW0lKzYqNyBsIS0vbTAtJTcnL
+Fragment II: SwnbzptDiM3JSpvFiMuJ28PJzAlJ28VIza=
