@@ -4,3 +4,7 @@ I identified the genuine fruit in sector_C/devil_fruit_6.txt
 by noticing it had a different modification timestamp and different 
 permissions compared to the replicas. I then ran the ./eat.sh script to awaken my power.
 ONE_PIECE{GITO_GITO_NO_AWAKENING}
+lag Found: BAROQUE_DIAL{SPLIT_TIMELINE_MISDIRECTION}
+Method:Encountered a log file with 100+ repetitive entries. 
+Used the grep -v "VALID" command to filter it out
+and reveal the hidden transmission in the bounty hunter feed.
