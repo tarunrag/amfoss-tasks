@@ -1,0 +1,224 @@
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --primary-color: #2962ff;
+    --positive-color: #00c853;
+    --negative-color: #d50000;
+    --hover-bg: #e8eaf6;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --border-color: #333;
+    --primary-color: #448aff;
+    --hover-bg: #2a2a2a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.header-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 8px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* Navigation Tabs */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1.5rem 0;
+}
+
+nav button {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    cursor: pointer;
+    padding-bottom: 5px;
+    opacity: 0.6;
+}
+
+nav button.active {
+    opacity: 1;
+    border-bottom: 2px solid var(--primary-color);
+    font-weight: bold;
+}
+
+/* Main Grid */
+main {
+    padding: 0 5% 2rem;
+}
+
+.loader {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.crypto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card-header img {
+    width: 30px;
+    height: 30px;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-change {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.positive { color: var(--positive-color); }
+.negative { color: var(--negative-color); }
+
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.wishlist-btn.active { color: #f1c40f; }
+
+/* Modal & Chart */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.time-filters {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.time-btn {
+    padding: 5px 15px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.time-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
